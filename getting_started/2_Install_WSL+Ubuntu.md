@@ -1,16 +1,17 @@
 1. **Install WSL and Ubuntu**
 
-    In the PowerShell window (run as Administrator), enter the following command to install WSL and the latest version of Ubuntu:
+   open powershell in vscode holding ctr and then pressing `
+   In the PowerShell window, enter the following command to install WSL and the latest version of Ubuntu:
 
     ```powershellwsl --install```
 
     This command will automatically set up WSL and download Ubuntu.
 
-2. **Restart Your Computer**
+3. **Restart Your Computer**
 
     After installation, restart your computer to complete the setup.
 
-3. **Launch Ubuntu**
+4. **Launch Ubuntu**
 
     Once restarted, open the Start Menu and launch "Ubuntu". On first launch, you will be prompted to create a Linux username and password.
 
