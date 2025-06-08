@@ -3,7 +3,7 @@ This repo is a complete walkthrough for learning and mastering Git and GitHub.
 
 ## Sections
 
-- [Getting Started](./Getting_started)
+- [Getting Started](./getting_started)
 - [Common Workflows](./workflows/branching.md)
 - [CLI Commands](./cli-examples/init-clone.md)
 - [Advanced Topics](./extras/ssh-setup.md)
