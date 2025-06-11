@@ -6,7 +6,6 @@
 ### - condition = expression returning True/False
 
 ## Example:
-```markdown
 ```python
 lambda x: x[1] in valid_formats
 ```
