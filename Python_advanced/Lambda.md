@@ -43,7 +43,7 @@ filter(lambda x: x[1] in valid_formats, zip(doc_names, doc_formats))
 
 ## Convert to list:
 ```markdown 
-``` python 
+```python 
 list(filter(lambda x: x[1] in valid_formats, zip(doc_names, doc_formats)))
 ```
 
@@ -61,7 +61,7 @@ def pair_document_with_format(doc_names, doc_formats):
 # Alternative with Named Function
 # -------------------------------
 ```markdown 
-``` python 
+```python 
 def is_valid_format(pair):
     return pair[1] in valid_formats
 
@@ -72,7 +72,7 @@ def pair_document_with_format_alt(doc_names, doc_formats):
 # Alternative using List Comprehension
 # -------------------------------
 ```markdown 
-``` python 
+```python 
 def pair_document_with_format_lc(doc_names, doc_formats):
     return [(name, fmt) for name, fmt in zip(doc_names, doc_formats) if fmt in valid_formats]
 ```
