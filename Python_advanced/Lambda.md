@@ -6,7 +6,7 @@
 ### - condition = expression returning True/False
 
 ## Example:
-```markdown 
+```markdown
 ```python
 lambda x: x[1] in valid_formats
 ```
@@ -22,10 +22,11 @@ lambda x: x[1] in valid_formats
 ### - Stops at shortest list (truncates silently if lengths differ)
 
 ## Example:
-```markdown 
+```markdown
 ```python
 zip(doc_names, doc_formats)
 ```
+
 
 # -------------------------------
 # filter() Function
@@ -36,14 +37,14 @@ zip(doc_names, doc_formats)
 ### - Returns an iterator of items where function(item) is True
 
 ## Example:
-```markdown 
+```markdown
 ```python 
 filter(lambda x: x[1] in valid_formats, zip(doc_names, doc_formats))
 ```
 
 ## Convert to list:
-```markdown 
-```python 
+```markdown
+```python
 list(filter(lambda x: x[1] in valid_formats, zip(doc_names, doc_formats)))
 ```
 
@@ -52,16 +53,16 @@ list(filter(lambda x: x[1] in valid_formats, zip(doc_names, doc_formats)))
 # -------------------------------
 ## valid_formats = ["docx", "pdf", "txt", "pptx", "ppt", "md"]
 
-```markdown 
-```python 
+```markdown
+```python
 def pair_document_with_format(doc_names, doc_formats):
     return list(filter(lambda x: x[1] in valid_formats, zip(doc_names, doc_formats)))
 ```  
 # -------------------------------
 # Alternative with Named Function
 # -------------------------------
-```markdown 
-```python 
+```markdown
+```python
 def is_valid_format(pair):
     return pair[1] in valid_formats
 
@@ -71,8 +72,8 @@ def pair_document_with_format_alt(doc_names, doc_formats):
 # -------------------------------
 # Alternative using List Comprehension
 # -------------------------------
-```markdown 
-```python 
+```markdown
+```python
 def pair_document_with_format_lc(doc_names, doc_formats):
     return [(name, fmt) for name, fmt in zip(doc_names, doc_formats) if fmt in valid_formats]
 ```
