@@ -1,5 +1,5 @@
 # -------------------------------
-# Lambda Function Template
+# **Lambda Function Template
 # -------------------------------
 ## format: lambda x: condition
 ### - x = parameter (can be named anything: x, item, pair, etc.)
